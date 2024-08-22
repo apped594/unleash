@@ -1,0 +1,1325 @@
+*,*::before,* ::after  {
+
+    box-sizing: border-box;
+}
+
+body{
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+
+    margin:0;
+    padding:0;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #b4b4b4f1;
+    background-color: #22171783;
+    background-image: radial-gradient(circle,#1c1d27e7, #1c1d27fb), url('img/Huizbesoek map.png');
+    background-size:cover;
+    background-position: center;
+    
+}
+
+h1,h2,a{
+    
+    margin:0;
+
+}
+
+h1{
+    font-size: 2.25rem;
+    font-weight: 300;
+    color:#FFFFFF;
+}
+
+h2{
+    font-size: 2rem;
+}
+
+
+
+
+.form-inputs::placeholder {
+
+    color:#adadadd3;
+    font-size:1rem; 
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.form-inputs{
+    outline: none;
+    padding: 1.15em;
+    font-size: 0.725rem;
+    letter-spacing: 1px;
+    border: 1.5px solid #58585a59;
+    
+    margin-bottom: .95rem;
+    width: 100%;
+    color:#FFFFFF;  
+    background-color: #22212600;
+    
+border-radius: 8px;
+    
+}
+
+
+
+.passwordFormInputs{
+
+    margin-bottom: .75em;
+    
+}
+
+.passwordContainer{
+    
+
+    width: 100%;
+
+    margin-bottom: .85em;
+}
+
+.passwordInfoContainer{
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+.passwordtoggle{
+    
+    display: inline-block;
+    font-size: 0.65rem;
+    font-weight: 700;
+    font-family: 'Source Sans Pro', sans-serif;
+    letter-spacing: 1px;
+    padding: .55em;
+    border-radius: 8px;
+    border:0;
+    cursor: pointer;
+    background-color: #222126;
+    color: #58585a;
+    
+
+}
+
+.passwordStrengthList{
+
+    font-size: .85rem;
+    background-color: #d40f0f;
+    width: 100%;
+    list-style:circle;
+
+}
+
+.pwItem{
+    
+
+    font-size: .8rem;
+    
+
+}
+
+strong{
+    color: #006237;
+}
+.action-button{
+    display: inline-block;
+    font-size: 0.725rem;
+    font-weight: 700;
+    font-family: 'Source Sans Pro', sans-serif;
+    letter-spacing: 1px;
+    padding: 1.15em;
+    border-radius: 8px;
+    border:0;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: .95em;
+}
+
+.action-button--normal {
+    background-color:#d40f0f;
+    /* background-image: linear-gradient(to right,#d40f0f36, #d40f0f); */
+    color: #FFFFFF;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), /* Shadow for 3D effect */
+                0 6px 20px rgba(0, 0, 0, 0.19); /* Additional shadow for depth */
+    
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Text shadow for better readability */
+            
+}
+
+.action-button--alternative {
+
+    
+    background-color:#0000008f;
+    color: #FFFFFF;
+    
+    
+             
+}
+
+.landingPageGrid{
+    
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template: minmax(1em,1fr) auto minmax(2fr,320px) auto minmax(1em,1fr) / minmax(1em,1fr) minmax(280px,auto) minmax(1em,1fr);
+
+    grid-template-areas:
+
+    ".. .. .."
+    '.. top ..'
+    ".. center .."
+    ".. bottom .."
+    ".. .. .."
+    ;
+
+}
+
+.alerts{
+    color: #58585a;
+}
+
+
+.pageGrid{
+    
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template: minmax(1em,1fr) auto 2fr auto minmax(1em,1fr) / minmax(1em,1fr) minmax(280px,auto) minmax(1em,1fr);
+
+    grid-template-areas:
+
+    ".. .. .."
+    '.. top ..'
+    ".. center .."
+    ".. bottom .."
+    ".. .. .."
+    ;
+
+}
+
+
+
+
+
+.landingPage{
+
+    min-height: 100dvh;
+
+}
+
+.top{
+
+    grid-area: top;
+    width:100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center; 
+    
+}
+
+
+.center{
+
+    grid-area: center;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.bottom{
+
+    grid-area: bottom;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;   
+}
+
+
+.logo{
+
+    max-height: 200px;
+    max-width: 350px;
+    margin:0;
+    padding:0;
+    display: block;
+    
+   
+    
+}
+
+.map{
+    grid-area: center;
+    max-height: 300px;
+    max-width: 300px;
+    object-fit: cover;
+    margin:0;
+    padding:0;
+    
+    
+}
+
+
+.login-page{
+
+    
+    background-color: #222126;
+    position: fixed;
+    width:100%;
+    top: 0;
+    right:0;
+    bottom:0;
+    left:100%; /* dit move hom basies regs van die skerm af*/
+    transform: translateX(0);
+    transition: .5s;
+    min-height: 100dvh;
+   
+}
+
+
+.infoModals{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    background-color: #222126;
+    position: fixed;
+    width:100%;
+    top: 0;
+    right:0;
+    bottom:0;
+    left:100%; /* dit move hom basies regs van die skerm af*/
+    transform: translateX(0);
+    transition: .5s;
+    min-height: 100dvh;
+
+}
+
+
+
+.infoModalsOpen{
+
+    transform: translateX(-100%);
+    
+
+}
+
+/* .infoModalsGrid{
+
+    display: grid;
+    align-items: left;
+    justify-content: center;
+    grid-template: 1em auto 1em / 1em auto 1em;
+
+    grid-template-areas:
+
+    ".. .. .."
+  ".. modalInfoContainer .."
+    ".. .. .."
+    ;
+
+} */
+
+.modalInfoContainer{
+
+    border: 2px solid #1c1d27d7; /* This sets the initial border size */ 
+    border-radius: 8px;   
+    padding:2em 1em;
+    margin:1em;
+
+    width: 95%;
+    max-width: 400px;
+   
+    
+    
+
+      
+}
+
+.modalInfoAction{
+
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+}
+
+
+
+
+
+.loginPageOpen {
+
+    transform: translateX(-100%);
+
+}
+
+
+/* app/home //////////////////////////////////////////////////////////////////////////*/
+
+.appMainGrid{
+
+    /* align-items: center; */
+    min-height: 100dvh;
+    display: grid;
+    
+    
+    grid-template: auto  1fr auto / auto auto auto auto;
+
+    grid-template-areas:
+
+    
+    "header header header header"
+    'panicBody panicBody panicBody panicBody'
+    "footer footer footer footer"
+    ;
+
+}
+
+.header{
+
+    grid-area: header;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    /* padding-left: .5em;
+    padding-right: .5em; */
+    padding: .35em .5em 0 .5em;
+    /* border-bottom: 2px solid #58585a59; */
+     /* Optional: Adds some space inside the element */
+    
+
+    /* box-shadow: 0 3px 3px 0 #006237a6; */
+    
+}
+
+.footer{
+    grid-area: footer;
+    display: flex;
+    justify-content: space-around;
+    background-color:#111111d8;
+    padding: .35em;
+    padding-bottom: .75em;
+    /* border-top: 2px solid #58585a59; */
+     /* Optional: Adds some space inside the element */
+     background-color: #1b1a1f
+    
+}
+
+.requestNewJobButtonClass{
+    margin-bottom: .5em;
+    width: 90%;
+    max-width: 400px;
+    
+
+}
+
+.menuButton{
+
+    
+    grid-area: menuButton;
+
+    background-color:#d40f0f;
+    color: #FFFFFF;
+    cursor: pointer;
+    
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Text shadow for better readability */
+
+    display: inline-block;
+    font-size: 0.725rem;
+    font-weight: 700;
+    font-family: 'Source Sans Pro', sans-serif;
+    padding: .5em .7em;
+    border-radius: 5px;
+    border:0;
+    cursor: pointer; 
+          
+}
+
+.headerIcons {
+    font-size: 1.15rem;
+    color: #fa5f22;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), /* Shadow for 3D effect */
+                0 6px 20px rgba(0, 0, 0, 0.19); /* Additional shadow for depth */
+    cursor: pointer; 
+    
+    
+}
+
+.notificationIcon{
+    
+    align-self: center;
+    color: #222126;
+    color:#dfdfdf;
+    margin: 0 .25em;
+    text-shadow:
+    -1px -1px 0 #fa5f2200,  
+    1px -1px 0 #fa5f2200,
+   -1px  1px 0 #fa5f2200,
+    1px  1px 0 #fa5f2200,
+    2px  2px 5px #fa5f2200;
+
+         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), /* Shadow for 3D effect */
+                0 6px 20px rgba(0, 0, 0, 0.19); /* Additional shadow for depth */
+         
+}
+    
+
+.profileIcon{
+
+    align-self: center;
+    color: #222126;
+    color:#dfdfdf;
+    text-shadow:
+    -1px -1px 0 #fa5f2200,  
+    1px -1px 0 #fa5f2200,
+   -1px  1px 0 #fa5f2200,
+    1px  1px 0 #fa5f2200,
+    2px  2px 5px #fa5f2200;
+     
+}
+
+    
+
+
+.headerLogo{
+    
+    width: auto;
+    height: 200px;
+    object-fit: cover;
+ 
+}
+
+.appActionButton{
+    display: inline-block;
+    font-size: 0.725rem;
+    font-weight: 700;
+    font-family: 'Source Sans Pro', sans-serif;
+    letter-spacing: 1px;
+    padding: 1em;
+    border-radius: 8px;
+    border:0;
+    cursor: pointer;
+    width: 45%;
+    
+  
+}
+
+.appActionButtonNormal {
+    background-color:#d40f0f;
+    
+    color: #FFFFFF;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), /* Shadow for 3D effect */
+                0 6px 20px rgba(0, 0, 0, 0.19); /* Additional shadow for depth */
+    
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Text shadow for better readability */         
+}
+
+.panicBody{
+    grid-area: panicBody;
+     display: flex; 
+    flex-direction: column;
+    
+    align-items: center;
+    justify-content: center;
+    padding:0 .5em;
+    
+
+    
+}
+
+.myLocationWrapper {
+    justify-self: center;
+    
+    gap:1em;
+    padding:.75em .5em;
+    padding-top: 1.25em;
+     margin: 0 .35em;
+    background-color:#111111d8;
+    
+    display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* justify-content: center; */
+        border: #58585a21 solid 1px;
+        /* border-left: #04e7f5 solid 4.5px; */
+        border-bottom: #d40f0f solid 4.5px; 
+        
+        /* border-top: #04e7f5 solid 4.5px;*/
+       
+        border-radius: 20px;
+         box-shadow: 0 2px 6px rgb(0, 0, 0), Shadow for 3D effect 
+                    0 6px 20px rgba(0, 0, 0, 0.19); /* Additional shadow for depth */
+                    width: 100%;
+    
+ min-height: 90%;
+}
+
+.myApproximateLocationTitle{
+    font-size: 1rem;
+    color:#ddc41c;
+
+}
+
+.myApproximateLocation{
+    font-size: 1rem;
+    color: #58585a;
+    
+}
+.myLocation{
+    
+    width: 90%;
+     height:150px;
+    object-fit: cover;
+    border: solid #58585a59 2px;
+    
+    border-radius: 10px;
+    margin-bottom: 1em;
+ 
+    
+}
+
+#map {
+    height: 200px;
+    width: 200px;
+}
+
+.alertButtonsWrapper{
+    /* height: 100%; */
+    margin-top: .75em;
+    width:100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 1em .5em;
+    background-color:#111111d8;
+    border: #58585a21 solid 1px;
+    /* border-left: #04e7f5 solid 4.5px; */
+    border-top: #006237a6 solid 4.5px;
+    
+    
+    /* border-top: #04e7f5 solid 4.5px;*/
+   
+    border-radius: 20px;
+     box-shadow: 0 2px 6px rgb(0, 0, 0), Shadow for 3D effect 
+                0 6px 20px rgba(0, 0, 0, 0.19); /* Additional shadow for depth */
+                width: 100%;
+    
+
+}
+
+.progress-container {
+    width: 90%;
+    height: 12px;
+    background-color: #dddddd00;
+   
+    border-radius: 5px;
+    outline: none;
+    overflow: hidden;
+    border: 1.5px solid #ff723b0a;
+        box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.3), /* Inner shadow for depth */
+                    2px 2px 5px rgba(0, 0, 0, 0.2); /* Outer shadow for 3D effect */
+}
+
+#progressBar {
+    height: 100%;
+    width: 0;
+    background-color: #d40f0ff3;
+    transition: width 0.1s;
+}
+
+#panicStatustext{
+
+    color:#ddc41c;
+    font-size: .85rem;
+    font-weight: 700;
+}
+
+.panicButtons{
+
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.75rem;
+    font-weight: 600;
+    font-family: 'Source Sans Pro', sans-serif;
+    letter-spacing: 1px;
+    padding: 1em;
+    border-radius: 8px;
+    border:0;
+    cursor: pointer;
+    width: 45%;
+    color: #ffffff;
+    text-shadow:
+    -1px -1px 0 #1c1d27,  
+     1px -1px 0 #1c1d27,
+    -1px  1px 0 #1c1d27,
+     1px  1px 0 #1c1d27;
+     outline: 2px solid #fffffff8; /* Adjust color and thickness as needed */
+     outline-offset: -.1em; /* Negative value to bring it inward */
+     outline: none;
+    
+        box-shadow: 0 4px 8px rgb(0, 0, 0);
+        border-radius: 8px; 
+    
+    
+}
+
+.dangerButton{
+    background-color: #d40f0f00;
+    
+    background-color: #d40f0ff3;
+    border-bottom: #d40f0ff3 solid 2.5px;
+    /* border-right: #d40f0ff3 solid 10.5px; */
+
+}
+
+.medicalButton{
+
+    background-color: #025e9b00;
+    background-color: #025e9b;
+    border-bottom: #025e9b solid 2.5px;
+
+}
+
+.callButton{
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 700;
+    font-family: 'Source Sans Pro', sans-serif;
+    padding: .5em .7em;
+    border-radius: 5px;
+    border:0;
+    cursor: pointer; 
+
+    color: #FFFFFF;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), /* Shadow for 3D effect */
+                0 6px 20px rgba(0, 0, 0, 0.19); /* Additional shadow for depth */
+    
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Text shadow for better readability */  
+    min-width: fit-content;
+    background-color: #111111d8;
+    text-decoration: none;
+
+    outline: none;
+    border-left:#d40f0f solid 4.5px;
+    border-right:#d40f0f solid 4.5px;
+        box-shadow: 0 4px 8px rgb(0, 0, 0);
+        border-radius: 15px; /* Adjust as needed */
+        width:100%;
+        text-align: center;
+    
+
+}
+
+
+
+
+
+.filterTabsContainer{
+
+    grid-area: filterTabs;
+    overflow: hidden; /* Hide overflow without scrollbars */
+    width: 100%; /* Ensure it fits the width of the app */
+
+}
+
+.filterTabs{
+    
+    display:flex;
+    overflow-x: auto; /* Allow horizontal scrolling */
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+    scrollbar-width: none; /* Hide scrollbar in Firefox */
+    -ms-overflow-style: none; /* Hide scrollbar in IE 10+ */
+    scroll-behavior: smooth; /* Smooth scrolling */
+    padding-bottom: .5em;
+    padding-top: .7em;
+    padding-left: .5em;
+    padding-right: .5em;
+    border-bottom: 2px solid #58585a91;
+    
+    /* background-color: #e33e47; */
+
+}
+
+.filterTabs::-webkit-scrollbar {
+    display: none; /* Hide scrollbar in Chrome, Safari, and Opera */
+}
+
+
+
+.filterButtons{
+
+    margin-right: 1.25em;
+    display: inline-block;
+    font-size: 0.725rem;
+    font-weight: 700;
+    font-family: 'Source Sans Pro', sans-serif;
+    padding: .5em .7em;
+    border-radius: 5px;
+    border:0;
+    cursor: pointer; 
+
+    color: #FFFFFF;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), /* Shadow for 3D effect */
+                0 6px 20px rgba(0, 0, 0, 0.19); /* Additional shadow for depth */
+    
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Text shadow for better readability */  
+    min-width: fit-content;
+}
+
+.filterButtonsNOMarginRight{
+    
+    margin-right: 0;
+    
+    }
+
+.notActiveFilterState{
+
+    background-color: #58585a59;
+}
+
+.activeFilterState{
+    background-color:#d40f0f;
+}
+
+/* request job*/
+
+.jobsPages{
+
+    background-color: #1c1d27;
+    
+    position: fixed;
+    width:100%;
+    top: 92;
+    right:0;
+    bottom:70;
+    left:100%; /* dit move hom basies regs van die skerm af*/
+    transform: translateX(0);
+    transition: .1s;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+    scrollbar-width: none; /* Hide scrollbar in Firefox */
+    -ms-overflow-style: none; /* Hide scrollbar in IE 10+ */
+
+}
+
+.jobsPages::-webkit-scrollbar {
+    display: none; /* Hide scrollbar in Chrome, Safari, and Opera */
+}
+
+.jobsPagesOpen{
+
+    transform: translateX(-100%);
+
+}
+
+.requestedJobsPageOpen{
+    transform: translateX(-100%);
+}
+
+.requestedJobsFilterActiveState{
+
+    background-color: #fa5f22;
+
+}
+
+/* menuPage */
+
+
+.menuPage{
+
+    background-color: #222126;
+    position: fixed;
+    width:100%;
+    top: 0;
+    right:0;
+    bottom:0;
+    right:100%; /* dit move hom basies regs van die skerm af*/
+    transform: translateX(0);
+    transition: .5s;
+    min-height: 100dvh;
+  
+}
+
+.menuPageOpen {
+
+    transform: translateX(100%);
+
+}
+
+
+/* PROFILE PAGE------------------------------------------- */
+
+.appProfilePageGrid{
+    min-height: 100dvh;
+    display: grid;
+    grid-template: auto auto 1fr/auto;
+    grid-template-areas:
+    "alternativeHeader"
+    'profileHeroSection'
+    "bodyProfile"
+    ;
+}
+
+.profileTypeActiveFilterState{
+    background-color: #fa5f2200;
+    /* border-bottom: #04e7f5 solid 4.5px; */
+}
+
+.alternativeHeader{
+    /* background-color: #04e7f5; */
+
+    display: flex;
+    padding-left: .5em;
+    border-bottom: 2px solid #58585a59; /* 2px is the thickness, black is the color */
+     /* Optional: Adds some space inside the element */
+    /* padding: .5em .5em; */
+
+    
+}
+
+.profileHeaderLogo{
+
+    color: #fff;
+    font-size: 1rem;
+    letter-spacing: 1;
+    font-style: normal;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal; 
+        
+        justify-self: center;
+        
+    }
+
+
+    .closePageButtons{
+        margin-right: 1.25em;
+        display: inline-block;
+        font-size: 0.725rem;
+        font-weight: 700;
+        font-family: 'Source Sans Pro', sans-serif;
+        padding: .5em .7em;
+        border-radius: 5px;
+        border:0;
+        cursor: pointer; 
+        background-color:#58585a59;
+        color: #FFFFFF;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), /* Shadow for 3D effect */
+                    0 6px 20px rgba(0, 0, 0, 0.19); /* Additional shadow for depth */
+        
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Text shadow for better readability */  
+        min-width: fit-content;
+        align-self: center;
+    
+    }
+
+    .sectionCards{
+    
+        margin-top:1em;
+        background-color:#111111d8;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* border: #58585a21 solid 1px; */
+        border-top: #ffffff solid 4.5px;
+        border-radius: 20px;
+        padding: .5em;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), /* Shadow for 3D effect */
+                    0 6px 20px rgba(0, 0, 0, 0.19); /* Additional shadow for depth */
+        width: 100%;
+    }
+    
+    .sectionCardsV2{
+        /* padding:1em; */
+        /* margin-top:1em; */
+        background-color: #1c1d2781;
+        /* display: flex; */
+        /* flex-direction: column; */
+        border: #58585a21 solid 1px;
+        /* border-radius: 20px; */
+        /* padding: .5em; */
+        /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), /* Shadow for 3D effect */
+                    /* 0 6px 20px rgba(0, 0, 0, 0.19); Additional shadow for depth */ 
+        
+    }
+    /* #profileTypeContainer{
+        display: none;
+    } */
+    
+    .profileHeroSection{
+    
+        margin: 1em .5em 0 .5em;
+        background-color:#111111d8;
+        grid-area: profileHeroSection;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border: #58585a21 solid 1px;
+        /* border-left: #04e7f5 solid 4.5px; */
+        border-bottom: #d40f0f solid 4.5px;
+        
+        /* border-top: #04e7f5 solid 4.5px; */
+       
+        border-radius: 20px;
+        padding: 1em;
+        box-shadow: 0 2px 6px rgb(0, 0, 0), /* Shadow for 3D effect */
+                    0 6px 20px rgba(0, 0, 0, 0.19); /* Additional shadow for depth */
+    }
+    
+    
+    
+    .profileImage{
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #FFFFFF;
+        border: #1c1d27 solid 2px;
+        font-size: 1.85rem;
+        color: #1c1d2775;
+        padding: 1em;
+        border-radius: 50px;
+        width: 40px;
+        height: 40px;
+        text-shadow:
+            -1px -1px 0 #1c1d27,  
+             1px -1px 0 #1c1d27,
+            -1px  1px 0 #1c1d27,
+             1px  1px 0 #1c1d27,
+             2px  2px 5px rgba(0, 0, 0, 0.3); /* Adds a shadow for a 3D effect */
+        
+    }
+    
+    .profileMainTitles{
+        margin-top: 0;
+        font-size: 1.5rem;
+        text-shadow:
+            -1px -1px 0 #1c1d27,  
+             1px -1px 0 #1c1d27,
+            -1px  1px 0 #1c1d27,
+             1px  1px 0 #1c1d27,
+             2px  2px 5px rgba(0, 0, 0, 0.3); /* Adds a shadow for a 3D effect */
+    }
+    
+    .profileTypeContainer{
+        margin-top: 0;
+        padding-top: 0;
+        display: flex;
+        justify-content: space-around;
+        align-content: center;
+        gap:.5em;
+        width: 100%;
+       
+    }
+    
+    .bodyProfile{
+    
+        grid-area: bodyProfile;
+    }
+    
+    .profileFilterButtons{
+        display: inline-block;
+        font-size: .9rem;
+        font-weight: 700;
+        font-family: 'Source Sans Pro', sans-serif;
+        
+        padding: .8em 1em;
+        border-radius: 8px;
+        border:0;
+        cursor: pointer;
+        width: 20%;
+        
+        color: #FFFFFF;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), /* Shadow for 3D effect */
+                    0 6px 20px rgba(0, 0, 0, 0.19); /* Additional shadow for depth */
+        
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Text shadow for better readability */
+        min-width: fit-content;
+        /* border-bottom: #04e7f5 solid 1.5px; */
+    }
+    
+    .profileTypeSections{
+        display: flex;
+        justify-content: center;
+        
+        position: fixed;
+        
+        width:100%;
+        top: 280px;
+        right:100%;
+        bottom:0;
+         /* dit move hom basies regs van die skerm af*/
+        transform: translateX(0);
+        transition: .1s;
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+        scrollbar-width: none; /* Hide scrollbar in Firefox */
+        -ms-overflow-style: none; /* Hide scrollbar in IE 10+ */
+    
+    }
+    
+    .profilePagesOpen{
+    
+        transform: translateX(100%);
+        
+    }
+    
+    .profileSectionOpen{
+    
+        transform: translateX(100%);
+    }
+    
+    .personalProfileFilterActiveState{
+    
+        background-color: #fa5f22;
+    }
+    
+    .sectionFilterContainer{
+        /* background-color: #fa5f22; */
+        text-align: center;
+        display: flex;
+        justify-content: space-around;
+        /* gap:.5em; */
+        padding-top: .85em;
+        padding-bottom: .85em;
+        width: 100%;
+    }
+    
+    .userInfoFilterActiveState{
+        background-color: #fa5f22;
+    }
+    .sectionFilterIcons{
+        margin-right: .5em;
+    
+    }
+    
+    .profileContainerStyles{
+    
+        
+        text-align: center ;
+          /* position: fixed; */
+          width:100%;
+          /* top: 30px;
+          right:0; */
+          /* bottom:68.5px; */
+          overflow-y: auto;
+          -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+          scrollbar-width: none; /* Hide scrollbar in Firefox */
+          -ms-overflow-style: none; /* Hide scrollbar in IE 10+ */
+          /* background-color: #e33e47; */
+      
+          
+      }
+      
+      .containerTitles{
+          text-align: left
+      }
+    
+      .hideContainer{
+        display: none;
+    }
+    
+    .visibleState{
+        display: block;
+    }
+    
+    .userAngelsSearch{
+        padding: .75em .95em;
+        border-radius: 100px;
+        border: 1px solid #58585a;
+        outline: none;
+        margin-top: 1.25em;
+        font-size: 0.725rem;
+        letter-spacing: 1px;
+        border: 1.5px solid #ff723b0a;
+        box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.3), /* Inner shadow for depth */
+                    2px 2px 5px rgba(0, 0, 0, 0.2); /* Outer shadow for 3D effect */
+        
+        border-radius: 8px;
+        border-bottom: #04e7f5 solid 2px;
+        margin-bottom: .95rem;
+        width: 95%;
+        color:#58585a;  
+        background-color: #1c1d2700;
+    
+    }
+    
+    .myAngelsWrapper{
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       }
+    
+       .singleAngelContainer{
+    
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    
+        padding: .15em .75em;
+        border-radius: 100px;
+        
+        outline: none;
+        
+        
+        letter-spacing: 1px;
+        border-left:#d40f0f solid 4.5px;
+        box-shadow: 0 4px 8px rgb(0, 0, 0);
+        border-radius: 15px; /* Adjust as needed */
+        margin-bottom: .95rem;
+        width: 95%;
+        color:#58585a;  
+        background-color: #111111d8;
+        
+    }
+    
+    .myAngelsLabels{
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Text shadow for better readability */  
+        color: #58585a;
+        margin-left: .5em;
+        letter-spacing: 1px;
+        font-size: 0.725rem;
+    }
+    
+    .viewAngelsButton{
+    
+        display: block;
+        font-size: 0.725rem;
+        font-weight: 700;
+        font-family: 'Source Sans Pro', sans-serif;
+        padding: .5em .7em;
+        border-radius: 5px;
+        border:0;
+        cursor: pointer;
+    
+        background-color: #FFFFFF;
+    
+        color:#000000;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), /* Shadow for 3D effect */
+                    0 6px 20px rgba(0, 0, 0, 0.19); /* Additional shadow for depth */
+        
+                    text-shadow: 
+                    1px 1px 0 #fff,  
+                   -1px 1px 0 #fff,
+                    1px -1px 0 #fff,
+                   -1px -1px 0 #fff,
+                    1px 0 0 #fff,
+                   -1px 0 0 #fff,
+                    0 1px 0 #fff,
+                    0 -1px 0 #fff; /* Outline color */ 
+        min-width: fit-content;
+    }
+    
+    .addAngelsModal{
+        text-align: center;
+        padding: 2em 2em;
+        margin-top:1em;
+        background-color: #111111d8;
+        border: none;
+        width: 95%;
+        max-width: 400px;
+        position: fixed;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                z-index: 1007;
+        border: #58585a21 solid 1px;
+        border-radius: 20px;
+        padding: .5em;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), /* Shadow for 3D effect */
+                    0 6px 20px rgba(0, 0, 0, 0.19); /* Additional shadow for depth */
+    
+        color: #b4b4b4f1;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        box-shadow: 0 2px 6px #58585a59, /* Shadow for 3D effect */
+                    0 6px 20px rgba(0, 0, 0, 0.19); /* Additional shadow for depth */
+                    display: none;
+    }
+    
+    .modalsBackdrop{
+        background: rgba(28, 29, 39, 0.418); /* Converted to use the RGBA equivalent */
+        backdrop-filter: blur(10px); /*Add a blur effect */
+         position: fixed; 
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+       
+        z-index: 1002;
+        display: none; /*Initially hidden */
+    }
+    
+    
+    .addAngelModalButton{
+        margin-bottom:.85em;
+    }
+
+
+    .closeModalButtons{
+        background-color:#58585a59;
+        color: #FFFFFF;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), /* Shadow for 3D effect */
+                    0 6px 20px rgba(0, 0, 0, 0.19); /* Additional shadow for depth */
+        
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Text shadow for better readability */ 
+        display: inline-block;
+        font-family: "Open Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+        letter-spacing: 1px;
+        padding: 1em;
+        border-radius: 8px;
+        border:0;
+        cursor: pointer;
+        width: 45%;
+        max-width: 350px;
+        margin-bottom: .95em;
+        
+    }
+    
+
+
+/* requestNewJob Menu */
+
+.requestNewJobMenuPage{
+
+    background-image: radial-gradient(circle,#1c1d27e7, #1c1d27fb), url('img/Huizbesoek map.png');
+    background-size:cover;
+    background-position: center;
+
+    background-color: #1c1d27;
+    position: fixed;
+    width:100%;
+    top: 0;
+    right:0;
+    bottom:0;
+    left:0;
+    transform: translateY(100%);
+    transition: .5s;
+    min-height: 100dvh;
+
+
+}
+
+.requestNewJobPageOpen{
+
+    transform: translateY(0);
+
+}

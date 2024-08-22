@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/9b1c591d09.js" crossorigin="anonymous"></script>
+    <title>Unleash Login</title>
+</head>
+
+<body>
+
+
+<!-- landingPage -->
+    
+<div class="landingPageGrid landingPage">
+
+    
+            <div class="top">
+                
+            </div>
+    
+            <div class="center">
+                <h2>unleash</h2>
+                <!-- <img src="img/App-icons-group.png" alt="map Logo"  class="map"> -->
+
+            </div>
+    
+            <div class="bottom">
+                <button class="action-button action-button--normal loginButton">Login</button>
+                <button class="action-button action-button--alternative registerButton">Register</button>
+
+            </div>
+
+        
+
+
+</div>
+
+<!-- loginPage -->
+
+<div id="loginPage" class="login-page pageGrid">
+
+        <div class="top">
+            <h2>unleash</h2>
+            
+        </div>
+        
+        <div class="center">
+            <p id="loginMessage">Enter Login details</p>
+                <input type="email" id="loginEmail" name="email" placeholder="email" required class="form-inputs"><br>
+                <div class="passwordContainer">
+                    <input type="password" id="loginPassword" name="password" placeholder="password" required class="form-inputs  passwordFormInputs">
+                    <button id="loginPasswordToggle" class="passwordtoggle">
+                        <i class="fa-regular fa-eye testing"></i> View Password
+                    </button>
+                </div>
+                <br>
+                <button id="submitLoginButton" type="submit-button" class="action-button--normal action-button ">Login</button>
+        </div>
+
+        <div class="bottom">
+            <button id="forgotPasswordButton" class="action-button action-button--alternative navbtn">Forgot Password</button>
+            <button class="action-button action-button--alternative registerButton navbtn">Register</button>
+        </div>
+</div>
+
+
+<!-- enter email / register page step 1 -->
+
+<div id="registerPageConfirmEmail" class="login-page pageGrid">
+
+        <div class="top">
+            <h2>unleash</h2>
+        </div>
+        
+        <div class="center">
+
+                <p>Please Enter a Valid Email</p>            
+                <input type="email" id="createEmail" name="email" placeholder="this email will receive the OTP" required class="form-inputs"><br>
+                <button id="continue" type="submit-button" class="action-button--normal action-button">Continue</button>
+                <p> or </p>
+                <button  class="action-button action-button--alternative loginButton action-nav-button navbtn">Login</button>
+            
+        </div>
+
+        <div class="bottom">
+            
+            <p id="enterEmailMessage" class="alerts">Step 1/3</p>
+        </div>
+</div>
+
+<!-- enter OTP step 2 -->
+
+<div id="otpPage" class="login-page pageGrid">
+
+        <div class="top">
+            <h2>unleash</h2>
+        </div>
+        
+        <div class="center">
+            <p>Please Enter OTP</p>
+                <input type="text" id="otp" name="otp" placeholder="check your email for code" required class="form-inputs"><br>
+                <button id="otpSubmit" type="submit-button" class="action-button--normal action-button">Submit</button>
+                <p>or</p>
+                <button id="otpResend" type="submit-button" class="action-button--alternative action-button">Resend OTP</button>
+                <button class="action-button action-button--alternative registerButton navbtn">Use a different email</button>
+        </div>
+
+        <div class="bottom">
+            <p id="emailTo" class="alerts">Step 2/3</p>
+        </div>
+
+</div>
+
+<!-- complete account page step 3 -->
+
+<div id="registerPageCreatePassword" class="login-page pageGrid">
+
+        <div class="top">
+            <h2>unleash</h2>
+        </div>
+        
+        <div class="center">
+            <p>Complete Registration</p>
+                <input type="text" id="name" name="name" placeholder="first name" required class="form-inputs"><br>
+                <div class="passwordContainer">
+                    <input type="password" id="createPassword" name="password" placeholder="enter new password" required class="form-inputs passwordFormInputs">
+
+                    <div class="passwordInfoContainer">
+
+                        <button id="createPasswordToggle" class="passwordtoggle">
+                            <i class="fa-regular fa-eye"></i> View
+                        </button>
+
+                        <button id="passwordInfoButton" class="passwordtoggle">
+                            <i class="fa-regular fa-circle-question"></i> Password Requirements
+                        </button>
+
+                    </div>
+                    
+                </div>
+                <br>
+                <div class="passwordContainer">
+
+                    <input type="password" id="confirmPassword" name="confirmPassword" placeholder="confirm password" required class="form-inputs passwordFormInputs">
+                    
+
+                    <button id="confirmPasswordToggle" class="passwordtoggle">
+                        <i class="fa-regular fa-eye testing"></i> View
+                    </button>
+
+                </div>
+
+                <br>
+                <button id="completeRegistration" type="submit-button" class="action-button--normal action-button">Register</button>
+                
+        </div>
+
+        <div class="bottom">
+           
+          <p id="completeAccountMessage" class="alerts">Step 3/3</p>
+           
+        </div>  
+</div>
+
+<div class="infoModals" id="passwordRequirementsPage">
+
+    <div class="modalInfoContainer">
+
+        <h2>Password Must</h2>
+
+        
+            <p class="pwItem">be at least <strong>8 characters long</strong>.</p>
+            <p class="pwItem">include at least <strong>one uppercase letter</strong> (A-Z).</p>
+            <p class="pwItem">include at least <strong>one lowercase letter</strong> (a-z).</p>
+            <p class="pwItem">include at least <strong>one digit</strong> (0-9).</p>
+            <p class="pwItem">include at least one special character: <strong>@  $  !  %  *  ?</strong>.</p>
+            <p class="pwItem"><strong>No</strong> spaces.</p>
+
+            
+        <button id="closePasswordRequirementsButton" class="action-button action-button--alternative">Close</button>
+
+
+    </div>
+        
+    
+</div>
+
+
+
+<div class="infoModals" id="duplicateEmailModal">
+
+    <div class="modalInfoContainer modalInfoAction">
+
+        <p id="duplicateEmailMessage">Email Already Used</p>
+
+        
+
+        <button class="action-button action-button--alternative registerButton navbtn">Use a different email</button>
+        <p>or try</p>
+
+        <button id="forgotPasswordButton" class="action-button action-button--alternative navbtn">Forgot Password</button>
+        <button  class="action-button action-button--alternative loginButton action-nav-button navbtn">Login</button>
+        
+
+    </div>
+        
+    
+</div>
+       
+</body>
+<script src="script.js"></script>
+</html>

@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/9b1c591d09.js" crossorigin="anonymous"></script>
+
+    <title>unleash</title>
+</head>
+
+<body>
+    
+
+    <div class="appMainGrid">
+
+        <!-- header -->
+
+        <div class="header">
+
+            <button id="menuButton"  class="menuButton">Menu</button>
+
+                <!-- <img src="img/App-icons-01.png" alt="grass"  class="headerLogo">
+                <img src="img/App-icons-02.png" alt="wave thing"  class="headerLogo"> -->
+                
+                <!-- <img src="img/App-icons-04.png" alt="chicken"  class="headerLogo">
+                <img src="img/App-icons-06.png" alt="leave"  class="headerLogo"> -->
+                
+                <div class="headerIconsContainer">
+                    
+                    
+                    <i id="notificationsButton" class="fa-solid fa-bell notificationIcon headerIcons"></i>
+
+                    <i id="profileButton" class="fa-solid fa-user profileIcon headerIcons"></i>
+
+                </div>
+        
+        </div>
+
+        <!-- App center -->
+
+
+        <div class="panicBody">
+            
+            
+
+            <!-- myLocation -->
+
+            <div class="myLocationWrapper">
+                <h1>unleash</h1>
+
+                <a href="tel:0833243076" class="callButton ">
+                
+                    Call Unleash: <i class="fa-solid fa-phone"></i> 0833243076
+                </a>
+
+                
+
+             
+                <!-- <img src="img/myLocation.png" alt="Location"  class="myLocation"> -->
+                <!-- <div id="map"></div> -->
+               
+                <!-- <p id="panicStatustext">Press and Hold to Send Panic</p> -->
+                <!-- <button id="getLocationButton" class="panicButtons ">
+                    <i class="fa-solid fa-land-mine-on"></i>
+
+                </button> -->
+
+                <!-- <div class="alertButtonsWrapper">
+
+              
+
+                    <button id="dangerButton" class="panicButtons dangerButton">
+                        <i class="fa-solid fa-land-mine-on"></i>
+    
+                    </button>
+                    <button id="medicalButton" class="panicButtons medicalButton">
+                        <i class="fa-solid fa-truck-medical"></i>
+                    </button>
+                </div> -->
+    
+              
+    
+            </div>
+    
+            </div>
+
+            <!-- alertButtons -->
+            
+            
+           
+            <!-- <p id="panicStatustext">Press and Hold to Send Panic</p> -->
+           
+            
+
+        <!-- footer -->
+
+        <div class="footer">
+
+           
+        
+        
+        </div>
+
+    </div>
+
+    <!-- menu page -->
+
+    <div id="menuPage" class="menuPage">
+        <p>menupage</p>
+       
+        <button id="closeMenuButton" class="appActionButton">Close</button>
+    </div>
+
+    <div id="notificationsPage" class="menuPage">
+        <p>notificationsPage</p>
+        <button id="closeNotificationsButton" class="appActionButton">Close</button>
+    </div>
+
+
+    <div id="newsPage" class="requestNewJobMenuPage">
+        <p>newsPage</p>
+        <button id="newsCloseButton" class="appActionButton">Cancel</button>
+    </div>
+
+    <div id="eventsPage" class="requestNewJobMenuPage">
+        <p>eventsPage</p>
+        <button id="eventsCloseButton" class="appActionButton">Close</button>
+    </div>
+
+    <!-- PROFILE PAGE--------------------------------------------- ---------------->
+     <!-- -------------------------------------------------------------------------- -->
+
+     <div id="profilePage" class="menuPage appProfilePageGrid">
+
+        <!-- profileheader -->
+        <div class="alternativeHeader">
+            <button id="closeProfileButton" class="closePageButtons">Back to Home</button>
+            <p class=" profileHeaderLogo">Unleash</p>
+
+        </div>
+        
+
+        <div class="profileHeroSection">
+                
+            <div class="profileImage">
+                <i id="profileImageButton" class="fa-solid fa-user"></i>
+            </div>
+            <p id="userFirstName" class="profileMainTitles">User</p>
+            
+            <div id="profileTypeContainer" class="profileTypeContainer">
+
+                <button id="personalProfileFilter" class="notActiveFilterState profileTypeActiveFilterState profileFilterButtons ">Profile</button>
+            </div>
+
+        </div>
+
+        <div class="bodyProfile">
+
+
+        </div>
+
+        <!-- Profile Info page -->
+
+        <div id="userInfoSection" class="profileTypeSections">
+
+            <div id="profileUserInfoPage" class="sectionCards ">
+    
+           
+                <div class="sectionFilterContainer">
+        
+                    <button id="userInfoButton" class="filterButtons notActiveFilterState">
+        
+                        <i class="fa-solid fa-user sectionFilterIcons"></i>Profile Information
+        
+                    </button>
+        
+                    <button id="userAngelsButton" class="filterButtons notActiveFilterState">
+        
+    
+                        <i class="fa-solid fa-truck sectionFilterIcons"></i>My Trucks
+                    </button>
+        
+                </div>
+        
+                <div id="userInformationContainer" class="profileContainerStyles hideContainer visibleState">
+        
+                    <!-- <p class="containerTitles">Personal Information</p> -->
+                    <input type="text" id="name" name="name" placeholder="first name" required class="form-inputs">
+                    <input type="text" id="contactNumber" name="contactNumber" placeholder="contact number" required class="form-inputs">
+                    <input type="text" id="idNumber" name="idNumber" placeholder="ID number" required class="form-inputs">
+                    <button id="updatePersonalInformationButton" class="appActionButton appActionButtonNormal productActionButtons">Update</button>
+                    
+                </div>
+    
+                <div id="userAngelsContainer" class="userAngelsContainer profileContainerStyles hideContainer ">
+    
+                
+                    <!-- <input type="text" placeholder="Search" required class="userAngelsSearch" id ="searchInput"> -->
+    
+                    <div id="myAngelsWrapper" class="myAngelsWrapper">
+    
+    
+                    </div>
+    
+                    <button id="openUserAngelsButton" class="appActionButton appActionButtonNormal productActionButtons">Add Trucks</button>
+                </div>
+              
+            </div>
+    
+        </div>
+
+        
+    </div>
+
+   <!-- Add Angels Pop-Up -->
+
+   <div id="userAddAngelsModal" class="addAngelsModal">
+
+    <p>Enter Truck Details</p>
+    <form id="userAddAngelsForm">
+        <input type="text" id="userAngelDisplayNameInput" name="angelDisplayName" placeholder="Enter display name" required class="form-inputs"><br>
+    
+        <input type="text" id="userAngelContactNumberInput" name="angelContactNumber" placeholder="Enter registration number" required class="form-inputs"><br>
+    
+        <button type="submit" class="appActionButton appActionButtonNormal addAngelModalButton productActionButtons">Add</button><br>
+        <button type="button" class="appActionButton closeModalButtons" id="closeAddUserAngelsModal">Close</button>
+    </form>
+    
+</div>
+
+<div id="modalsBackDrop" class="modalsBackdrop">
+        
+</div> 
+
+<!-- Complete profile Prompts -->
+
+<div id="completeUserProfilAlertModal" class="addAngelsModal">
+
+    <h4>Please Complete the Following:</h4>
+        <button id="personalInformationAlertButton" type="button" class="appActionButton appActionButtonNormal productActionButtons">1. Personal Information</button><br><br>
+        <button id="angelInformationAlertButton" type="button" class="appActionButton appActionButtonNormal productActionButtons">2. Add Trucks</button><br><br>
+        
+        <button type="button" class="appActionButton closeModalButtons" id="skipCompleteProfileButton">Close</button>
+
+</div>
+
+</body>
+<script src="/script2.js"></script>
+</html>
+
+
+ <!-- <div class="filterTabsContainer">
+
+            <div class="filterTabs">
+
+                <button id="requestedJobsFilter" class="notActiveFilterState requestedJobsFilterActiveState filterButtons">Requested Jobs</button>
+                <button id="activeJobsFilter" class="notActiveFilterState filterButtons">Active</button>
+                <button id="completedJobsFilter" class="notActiveFilterState filterButtons">Completed</button>
+                <button id="archivedJobsFilter" class="notActiveFilterState filterButtons filterButtonsNOMarginRight">Archived</button>
+    
+    
+            </div>
+
+
+        </div> -->
+
+
+
+        <!--news page  -->
+<!-- <div id="requestJobsPage" class=" jobsPages requestedJobsPageOpen">
+    <p>requestJobPage</p>
+    <p>requestJobPage</p>
+    <p>requestJobPage</p>
+    <p>requestJobPage</p>
+    <p>requestJobPage</p>
+    <p>requestJobPage</p>
+    <p>requestJobPage</p>
+    <p>requestJobPage</p>
+    <p>requestJobPage</p>
+    <p>requestJobPage</p>
+    <p>requestJobPage</p>
+    <p>requestJobPage</p>
+    <p>requestJobPage</p>
+</div> -->
+
+<!--active Jobs page  -->
+    <!-- <div id="activeJobsPage" class="jobsPages">
+        <p>activeJobPage</p>
+        <p>activeJobPage</p>
+        <p>activeJobPage</p>
+        <p>activeJobPage</p>
+        <p>activeJobPage</p>
+        <p>activeJobPage</p>
+        <p>activeJobPage</p>
+        <p>activeJobPage</p>
+        <p>activeJobPage</p>
+        <p>activeJobPage</p>
+        <p>activeJobPage</p>
+        <p>activeJobPage</p>
+        <p>activeJobPage</p>
+        <p>activeJobPage</p>
+        <p>activeJobPage</p>
+        <p>activeJobPage</p>
+        <p>activeJobPage</p>
+    </div> -->
+   
+    
+
+    <!--completed Job page  -->
+    <!-- <div id="completedJobsPage" class=" jobsPages">
+        <p>completedJobPage</p>
+        <p>completedJobPage</p>
+        <p>completedJobPage</p>
+        <p>completedJobPage</p>
+        <p>completedJobPage</p>
+        <p>completedJobPage</p>
+        <p>completedJobPage</p>
+        <p>completedJobPage</p>
+        <p>completedJobPage</p>
+        <p>completedJobPage</p>
+        <p>completedJobPage</p>
+        <p>completedJobPage</p>
+        <p>completedJobPage</p>
+        <p>completedJobPage</p>
+    </div> -->
+
+    <!--archived Job page  -->
+    <!-- <div id="archivedJobsPage" class=" jobsPages">
+        <p>archivedJobPage</p>
+        <p>archivedJobPage</p>
+        <p>archivedJobPage</p>
+        <p>archivedJobPage</p>
+        <p>archivedJobPage</p>
+        <p>archivedJobPage</p>
+        <p>archivedJobPage</p>
+        <p>archivedJobPage</p>
+        <p>archivedJobPage</p>
+        <p>archivedJobPage</p>
+        <p>archivedJobPage</p>
+        <p>archivedJobPage</p>
+        <p>archivedJobPage</p>
+    </div> -->
